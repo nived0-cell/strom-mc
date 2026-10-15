@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Minecraft Server</title>
+    <style>
+        /* Modern Dark Theme */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Top IP & Connection Banner */
+        .connection-banner {
+            background: #1e1e1e;
+            border: 2px solid #388e3c; /* Minecraft Green */
+            border-radius: 12px;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .banner-title {
+            font-size: 1.2rem;
+            color: #81c784;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .ip-group {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .label {
+            color: #aaaaaa;
+            font-weight: 500;
+        }
+
+        .value {
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            background: #2d2d2d;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .divider {
+            height: 1px;
+            background: #333333;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP SERVER IP BANNER -->
+    <div class="connection-banner">
+        <div class="banner-title">🎮 Connect to the Server</div>
+        
+        <!-- Java Connection -->
+        <div class="ip-group">
+            <span class="label">Java IP:</span> 
+            <span class="value">://yourserver.com</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Bedrock Connection -->
+        <div class="ip-group">
+            <span class="label">Bedrock IP:</span> 
+            <span class="value">://yourserver.com</span>
+        </div>
+        <div class="ip-group">
+            <span class="label">Bedrock Port:</span> 
+            <span class="value">19132</span>
+        </div>
+    </div>
+
+</body>
+</html>
